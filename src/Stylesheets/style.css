@@ -1,0 +1,309 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: #2c2c2d;
+  overflow: hidden;
+  font-size: 16px;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  position: relative;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* default styles */
+.flex {
+  display: flex;
+}
+.justify_between {
+  justify-content: space-between;
+}
+.justify_center {
+  justify-content: center;
+}
+.items_center {
+  align-items: center;
+}
+.container{
+  max-width: 1350px;
+  width: 90%;
+  border: 1px solid gray;
+}
+/* custom styles */
+.green {
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  position: absolute;
+  left: -300px;
+  top: -400px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  filter: blur(80px);
+  background: #323d2c;
+  background: -webkit-linear-gradient(to right, #323d2c, #323d2c);
+  background: linear-gradient(to right, #323d2c, #323d2c);
+  /* D38312 */
+}
+.blue {
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  position: absolute;
+  overflow: hidden;
+  left: 800px;
+  bottom: -900px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  filter: blur(400px);
+  background: red;
+  background: -webkit-linear-gradient(to right, red, #d38312);
+  background: linear-gradient(to right, red, #d3821292);
+}
+.orange {
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  position: absolute;
+  overflow: hidden;
+  left: -200px;
+  bottom: -700px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  filter: blur(120px);
+  background: #323d2c;
+  background: -webkit-linear-gradient(to right, #323d2c, #d38312);
+  background: linear-gradient(to right, #323d2c, #d3821292);
+}
+
+.red {
+  width: 1100px;
+  height: 1100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -300px;
+  right: -300px;
+  background-color: purple;
+  background: -webkit-linear-gradient(to bottom, purple, #323d2c);
+  background: linear-gradient(to bottom, purple, #323d2c);
+  filter: blur(250px);
+  opacity: 40%;
+}
+.image {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+.heading {
+  width: 60%;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  margin: auto;
+  margin-top: 1rem;
+  line-height: 1.5;
+  margin: 2rem auto;
+}
+.dapp {
+  display: block;
+  margin: auto;
+  width: 20rem;
+  margin-top: 2rem;
+}
+.side_logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.soon_img{
+  display: block;
+  margin: auto;
+  margin-top: -5rem;
+  width: 400px;
+}
+.lottie{
+  width: 45%;
+  margin: auto;
+}
+
+@media screen and (max-width : 912px) {
+  html{
+    font-size: 14px;
+  }
+  body{
+    overflow: hidden !important;
+    margin: auto;
+    overflow-x: hidden;
+  }
+  .red, .green, .orange, .blue{
+    display: none;
+    width: 800px;
+    height: 800px;
+  }
+ .green{
+    display: block;
+    left: -400px;
+    top: -200px;
+  }
+  .orange{
+    display: block;
+    left: -400px;
+    bottom: -450px;
+  }
+  .image{
+    width: 90%;
+  }
+  .dapp{
+    width: 50% !important;
+    margin-top: -4rem;
+  }
+  .heading{
+    width: 80%;
+    font-size: 2rem;
+  }
+  .lottie{
+    width: 70%;
+  }
+  .container{
+    width: 90%;
+    margin: auto !important;
+    margin-left: 25rem;
+  }
+}
+@media screen and (max-width : 415px) {
+  html{
+    font-size: 12px;
+  }
+  .container{
+    width: 80%;
+  }
+  .soon_img{
+    width: 80% !important;
+    margin-top: -3rem;
+  }
+  .heading{
+    width: 90%;
+    font-size: 1.2rem;
+  }
+}
