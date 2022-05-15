@@ -307,3 +307,30 @@ table {
     font-size: 1.2rem;
   }
 }
+@media screen and (max-width: 1380px) {
+  body {
+    margin: auto;
+    height: 100vh;
+  }
+  .container {
+    height: 100vh;
+    margin: auto;
+  }
+  .dapp {
+    margin-top: -3rem !important;
+    width: 25%;
+  }
+  .soon_img {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 1353px) {
+  .container {
+    height: 100vh;
+    margin: auto;
+  }
+  .dapp {
+    margin-top: -3rem !important;
+    width: 20%;
+  }
+}
