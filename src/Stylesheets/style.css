@@ -145,7 +145,6 @@ table {
 .container{
   max-width: 1350px;
   width: 90%;
-  border: 1px solid gray;
 }
 /* custom styles */
 .green {
